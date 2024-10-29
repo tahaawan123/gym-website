@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
 
-import img from "/public/gym.jpg";
+import img from "/public/Gym.jpg";
 
 const Gympage = () => {
   return (
