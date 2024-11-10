@@ -6,7 +6,7 @@ import Image from "next/image";
 const Gympage = () => {
   return (
     <div className="border-b-4 border-primary">
-      <Image src={"/Gym.jpg"} alt="GymPic" />
+      <Image src={"/Gym.jpg"} alt="GymPic" width={1500} height={900}/>
       <div className="text-white absolute top-72 left-0 font-extrabold size-96 text-6xl">
         <h1>WE ARE ONE OF PAKISTAN FIRST COMMUNITY BASED GYM</h1>
       </div>
