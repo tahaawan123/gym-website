@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
 
-import img from "../../public/pic.jpg";
+
 
 const FormPage = () => {
   return (
@@ -51,7 +51,7 @@ const FormPage = () => {
 
       <div>
         <Image
-          src={img}
+          src={"/pic.jpg"}
           alt={"machineimage"}
           width={500}
           height={500}

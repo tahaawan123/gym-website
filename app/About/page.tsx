@@ -1,13 +1,13 @@
 import React from "react";
 import Image from "next/image";
 
-// Image Imort
-import classes from "/public/GymClasses.jpg";
-import trainer from "/public/GymTrainer.jpg";
-import doumbbleImg from "/public/Doumbble.jpg";
-import trainerImg from "/public/trainer.jpg";
-import personalTrainer from "/public/PersonalTraining.jpg";
-import pool from "/public/Pool.png";
+
+
+
+
+
+
+
 const AboutPage = () => {
   return (
     <div>
@@ -20,7 +20,7 @@ const AboutPage = () => {
       {/* Image Section */}
       <div className="flex">
         <Image
-          src={classes}
+          src={"/GymClasses.jpg"}
           alt="GymClasses"
           width={600}
           height={400}
@@ -30,7 +30,7 @@ const AboutPage = () => {
           OUR CLASSES
         </h2>
         <Image
-          src={trainer}
+          src={"/GymTrainer.jpg"}
           alt="GymTrainer"
           width={661}
           height={400}
@@ -58,7 +58,7 @@ const AboutPage = () => {
           the reliability of Structure Health & Fitness.
         </p>
         <Image
-          src={doumbbleImg}
+          src={"/Doumbble.jpg"}
           alt="GymTrainer"
           width={600}
           height={400}
@@ -73,7 +73,7 @@ const AboutPage = () => {
       </h2>
       <div className="flex font-mono">
         <Image
-          src={trainerImg}
+          src={"/trainer.jpg"}
           alt="GymTrainer"
           width={600}
           height={400}
@@ -103,7 +103,7 @@ const AboutPage = () => {
           transformative program. Start your journey today.
         </p>
         <Image
-          src={personalTrainer}
+          src={"/PersonalTraining.jpg"}
           alt="personalTrainer"
           width={600}
           height={400}
@@ -118,7 +118,7 @@ const AboutPage = () => {
       </h2>
       <div className="flex font-mono">
         <Image
-          src={pool}
+          src={"/Pool.png"}
           alt="pool"
           width={600}
           height={400}

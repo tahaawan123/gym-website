@@ -1,12 +1,12 @@
 import React from "react";
 import Image from "next/image";
 
-import img from "/public/Gym.jpg";
+
 
 const Gympage = () => {
   return (
     <div className="border-b-4 border-primary">
-      <Image src={img} alt="GymPic" />
+      <Image src={"/Gym.jpg"} alt="GymPic" />
       <div className="text-white absolute top-72 left-0 font-extrabold size-96 text-6xl">
         <h1>WE ARE ONE OF PAKISTAN FIRST COMMUNITY BASED GYM</h1>
       </div>

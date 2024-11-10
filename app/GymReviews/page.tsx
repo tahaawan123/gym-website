@@ -1,10 +1,10 @@
 import React from "react";
 import Image from "next/image";
 
-/* My Image */
-import image from "../../public/image1.jpg";
-import tahaImage from "../../public/taha.jpg";
-import ZoneImage from "../../public/comfortGym.jpg";
+
+
+
+
 const ReviewsPage = () => {
   return (
     <div>
@@ -21,7 +21,7 @@ const ReviewsPage = () => {
         {/* My Image */}
 
         <Image
-          src={tahaImage}
+          src={"/taha.jpg"}
           alt={"tahaPic"}
           width={100}
           height={100}
@@ -32,7 +32,7 @@ const ReviewsPage = () => {
       </div>
       <div>
         <Image
-          src={image}
+          src={"/image1.jpg"}
           alt="Picture of the author "
           width={500}
           height={500}
@@ -49,19 +49,19 @@ const ReviewsPage = () => {
           <p>
             <span className="text-6xl font-medium mr-40 ml-4">12889</span>{" "}
             <br />
-            Club Members{" "}
+            Club Members
           </p>
           <p>
             <span className="text-6xl font-medium mr-40 ">40</span> <br />
-            Club Trainers{" "}
+            Club Trainers
           </p>
           <p>
             <span className="text-6xl font-medium mr-40 ">50</span> <br />
-            Fitness Classes{" "}
+            Fitness Classes
           </p>
           <p>
             <span className="text-6xl font-medium mr-40 ">232</span> <br />
-            Gym Equipment{" "}
+            Gym Equipment
           </p>
         </div>
       </div>
@@ -78,7 +78,7 @@ const ReviewsPage = () => {
           </p>
           <p>
             Success usually comes to those who are too busy to be looking for
-            it. The body achieves what the mind believes.{" "}
+            it. The body achieves what the mind believes.
           </p>
           <button
             type="button"
@@ -91,7 +91,7 @@ const ReviewsPage = () => {
 
       <div className="border-b-4 border-primary">
         <Image
-          src={ZoneImage}
+          src={"/comfortGym.jpg"}
           alt={"comfort Zone"}
           width={500}
           height={500}
