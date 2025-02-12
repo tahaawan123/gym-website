@@ -13,7 +13,7 @@ const HeaderPage = () => {
           alt="Logo"
           height={50}
           width={70}
-        
+          priority // Next.js Image Optimization Fix
           className="border-2 border-yellow-700"
         />
 
