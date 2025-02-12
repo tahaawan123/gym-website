@@ -6,7 +6,7 @@ import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 
 const Header = () => {
   return (
-    <header className="fixed top-0 left-0 right-0 bg-black bg-opacity-80 text-white h-16 flex items-center justify-between px-5 md:px-10 z-50 shadow-lg">
+    <header className=" bg-black bg-opacity-80 text-white h-16 flex items-center justify-between px-5 md:px-10 z-50 shadow-lg">
       {/* Logo */}
       <Image src="/Sturcture-logo.png" alt="Logo" height={50} width={70} className="border-2 border-yellow-700" />
 
