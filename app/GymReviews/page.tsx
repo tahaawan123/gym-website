@@ -4,30 +4,32 @@ import Image from "next/image";
 const ReviewsPage = () => {
   return (
     <div className="text-white">
-      {/* Testimonials Section */}
-      <div className="flex flex-col items-center text-center px-4 md:px-12 py-12">
-        <h1 className="text-3xl md:text-5xl font-bold mb-6">TESTIMONIALS</h1>
-        <p className="max-w-3xl text-base md:text-lg">
-          I Joined Them Last Month And So Far I Am Having A Wonderful Experience
-          Here. The Staff Is Friendly And Well Mannered. The Place Is Surrounded
-          By Elite-class People As It Is One Of The Most Expensive Gyms And
-          Fitness Clubs In Karachi. I Am Having Swimming Sessions There And So
-          Far It Is My Best Experience.
-        </p>
-      </div>
-
-      {/* Gym Image with Profile */}
-      <div className="relative w-full">
+       <div className="relative w-full min-h-screen flex flex-col items-center justify-center text-white px-4 md:px-12 py-12">
+      {/* Background Image */}
+      <div className="absolute inset-0 w-full h-full">
         <Image
           src="/image1.jpg"
           alt="Gym"
-          width={500}
-          height={500}
-          className="w-full h-auto"
+          layout="fill"
+          objectFit="cover"
+          className="w-full h-full"
+          priority
         />
+      </div>
 
-        {/* Profile Absolute Centered */}
-        <div className="absolute inset-0 flex flex-col items-center justify-center text-center">
+      {/* Overlay Section */}
+      <div className="relative flex flex-col items-center text-center bg-black bg-opacity-70 p-6 sm:p-10 rounded-lg shadow-lg max-w-3xl">
+        <h1 className="text-3xl md:text-5xl font-bold mb-6">TESTIMONIALS</h1>
+        <p className="text-base md:text-lg">
+          I joined them last month, and so far, I am having a wonderful experience
+          here. The staff is friendly and well-mannered. The place is surrounded
+          by elite-class people as it is one of the most expensive gyms and
+          fitness clubs in Karachi. I am having swimming sessions there, and so
+          far, it is my best experience.
+        </p>
+
+        {/* Profile Section */}
+        <div className="flex flex-col items-center mt-6">
           <Image
             src="/taha.jpg"
             alt="Muhammad Taha"
@@ -35,13 +37,11 @@ const ReviewsPage = () => {
             height={80}
             className="rounded-full border-2 border-primary"
           />
-          <h3 className="text-white text-lg font-semibold mt-2">
-            MUHAMMAD TAHA
-          </h3>
+          <h3 className="text-lg font-semibold mt-2">MUHAMMAD TAHA</h3>
           <p className="text-primary text-sm">CROSSFIT PROFESSIONAL</p>
         </div>
       </div>
-
+    </div>
       {/* Gym Facts Section */}
       <div className="bg-primary py-12 text-center">
         <h3 className="text-3xl md:text-5xl font-bold mb-8">GYM FACTS</h3>

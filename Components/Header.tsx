@@ -5,7 +5,7 @@ import { Menu, X } from "lucide-react";
 
 const HeaderPage = () => {
   return (
-    <header className="fixed top-0 left-0 right-0 bg-black bg-opacity-90 backdrop-blur-lg text-white shadow-md z-50">
+    <header className="fixed top-0 left-0 right-0 bg-black bg-opacity-90 text-white shadow-md z-50">
       <nav className="flex items-center justify-between px-5 h-16 md:px-10">
         {/* Logo */}
         <Image
@@ -13,6 +13,7 @@ const HeaderPage = () => {
           alt="Logo"
           height={50}
           width={70}
+        
           className="border-2 border-yellow-700"
         />
 
@@ -41,8 +42,8 @@ const HeaderPage = () => {
 
           {/* Mobile Menu */}
           <div
-            className="fixed top-0 left-0 w-full h-screen bg-black bg-opacity-90 text-white flex flex-col items-center justify-center space-y-6 
-            transform scale-0 transition-transform peer-checked:scale-100"
+            className="absolute top-0 left-0 w-full h-screen bg-black bg-opacity-90 text-white flex flex-col items-center justify-center space-y-6 
+            opacity-0 scale-95 transition-all duration-300 peer-checked:opacity-100 peer-checked:scale-100"
           >
             <label htmlFor="menu-toggle" className="absolute top-5 right-5 cursor-pointer">
               <X size={30} className="text-white" />
