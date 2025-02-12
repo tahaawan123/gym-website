@@ -1,91 +1,42 @@
 import React from "react";
-import { FaChartBar } from "react-icons/fa";
-import { FaFlask } from "react-icons/fa";
-import { FaGem } from "react-icons/fa";
-import { FaTachometerAlt } from "react-icons/fa";
-
-import { FaMapSigns } from "react-icons/fa";
-import { FaDumbbell } from "react-icons/fa";
-import { FaAnchor } from "react-icons/fa";
+import { FaChartBar, FaFlask, FaGem, FaTachometerAlt, FaMapSigns, FaDumbbell, FaAnchor, FaBolt } from "react-icons/fa";
 import { LiaSwimmingPoolSolid } from "react-icons/lia";
-import { FaBolt } from "react-icons/fa6";
 
 const DataPage = () => {
   return (
-    <div className="h-[700px] bg-zinc-800 ">
-      <h2 className="text-center p-10 text-white text-4xl">Our Process</h2>
+    <div className="bg-zinc-800 py-10">
+      <h2 className="text-center text-white text-3xl md:text-4xl font-bold mb-8">Our Process</h2>
 
-      {/* Motivational Icons  */}
-
-      <div className="flex text-white ">
-        <div className="bg-zinc-700 rounded shadow-md shadow-slate-900 w-56 ml-20 h-64  flex flex-col items-center justify-center">
-          <div className="text-4xl   bg-primary rounded-[120px] p-5 ">
-            <FaChartBar />
+      {/* Motivational Icons - Responsive Grid */}
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 px-5 md:px-20">
+        {[
+          { icon: <FaChartBar />, text: "Analyze Your Goal" },
+          { icon: <FaFlask />, text: "WORK HARD ON IT" },
+          { icon: <FaTachometerAlt />, text: "IMPROVE YOU" },
+          { icon: <FaGem />, text: "ACHIEVE GOALS" },
+        ].map((item, index) => (
+          <div key={index} className="bg-zinc-700 rounded-lg shadow-lg p-6 flex flex-col items-center justify-center transition-transform duration-300 hover:scale-105">
+            <div className="text-4xl bg-primary p-4 rounded-full">{item.icon}</div>
+            <p className="text-white text-lg font-semibold mt-4">{item.text}</p>
           </div>
-          Analyze Your Goal
-        </div>
-        <div className="bg-zinc-700 rounded shadow-md shadow-slate-900 w-56 ml-20 h-64  flex flex-col items-center justify-center">
-          <div className="text-4xl bg-primary rounded-[120px] p-5 ">
-            <FaFlask />
-          </div>
-          WORK HARD ON IT
-        </div>
-        <div className="bg-zinc-700 rounded shadow-md shadow-slate-900 w-56 ml-20 h-64  flex flex-col items-center justify-center">
-          <div className="text-4xl   bg-primary rounded-[120px] p-5 ">
-            <FaTachometerAlt />
-          </div>
-          IMPROVE YOU
-        </div>
-        <div className="bg-zinc-700 rounded shadow-md shadow-slate-900 w-56 ml-20 h-64  flex flex-col items-center justify-center">
-          <div className="text-4xl   bg-primary rounded-[120px] p-5 ">
-            <FaGem />
-          </div>
-          ACHIEVE GOALS
-        </div>
+        ))}
       </div>
 
-      {/* Gym Details */}
-
-      <div className="flex text-white mt-16 ml-9">
-        <div className=" bg-zinc-900 w-56 ml-1   h-64  flex flex-col items-center justify-center">
-          <div className="text-4xl   p-5 ">
-            <FaMapSigns />
+      {/* Gym Details - Responsive Grid */}
+      <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-6 px-5 md:px-20 mt-12">
+        {[
+          { icon: <FaMapSigns />, number: "3", label: "Branches" },
+          { icon: <FaDumbbell />, number: "232+", label: "Machines" },
+          { icon: <FaAnchor />, number: "40+", label: "Trainers" },
+          { icon: <LiaSwimmingPoolSolid />, number: "23", label: "Meters Pool" },
+          { icon: <FaBolt />, number: "12,889+", label: "Clients" },
+        ].map((item, index) => (
+          <div key={index} className="bg-primary rounded-lg shadow-lg p-6 flex flex-col items-center justify-center transition-transform duration-300 hover:scale-105">
+            <div className="text-4xl p-4">{item.icon}</div>
+            <p className="text-2xl font-bold text-white">{item.number}</p>
+            <p className="text-primary">{item.label}</p>
           </div>
-          <p className="text-2xl font-bold ">3</p>
-          <p className="text-primary">Branches</p>
-        </div>
-        <div className=" bg-zinc-900 w-56 ml-1   h-64  flex flex-col items-center justify-center">
-          <div className="text-4xl   p-5 ">
-            <FaDumbbell />
-          </div>
-          <p className="text-2xl font-bold ">232+</p>
-
-          <p className="text-primary">Machines </p>
-        </div>
-        <div className=" bg-zinc-900 w-56 ml-1   h-64  flex flex-col items-center justify-center">
-          <div className="text-4xl p-5 ">
-            <FaAnchor />
-          </div>
-          <p className="text-2xl font-bold ">40+</p>
-
-          <p className="text-primary">Trainers </p>
-        </div>
-        <div className=" bg-zinc-900 w-56 ml-1    h-64  flex flex-col items-center justify-center">
-          <div className="text-4xl  p-5 ">
-            <LiaSwimmingPoolSolid />
-          </div>
-          <p className="text-2xl font-bold ">23</p>
-
-          <p className="text-primary">Meters Pool</p>
-        </div>
-        <div className=" bg-zinc-900 w-56 ml-1    h-64  flex flex-col items-center justify-center">
-          <div className="text-4xl  p-5 ">
-            <FaBolt />
-          </div>
-          <p className="text-2xl font-bold ">12,889+</p>
-
-          <p className="text-primary">Clients </p>
-        </div>
+        ))}
       </div>
     </div>
   );
