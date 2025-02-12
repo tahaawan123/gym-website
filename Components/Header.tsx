@@ -2,7 +2,7 @@ import React from "react";
 import Link from "next/link";
 import Image from "next/image";
 
-const HeaderPage = () => {
+const Header = () => {
   return (
     <header className="fixed top-0 left-0 right-0 bg-black bg-opacity-50 text-white h-16 flex items-center justify-between px-5 md:px-10 z-50">
       {/* Logo */}
@@ -27,4 +27,4 @@ const HeaderPage = () => {
   );
 };
 
-export default HeaderPage;
+export default Header;

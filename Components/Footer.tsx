@@ -1,7 +1,7 @@
 import React from "react";
 import { CiFacebook, CiInstagram, CiLinkedin } from "react-icons/ci";
 
-const FooterPage = () => {
+const Footer = () => {
   return (
     <footer className="bg-black text-white opacity-85 py-5 px-4 text-center">
       {/* Copyright Text */}
@@ -19,4 +19,4 @@ const FooterPage = () => {
   );
 };
 
-export default FooterPage;
+export default Footer;
