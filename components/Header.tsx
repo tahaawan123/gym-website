@@ -50,11 +50,11 @@ const Header = () => {
         <SheetContent side="left" className="bg-black text-white w-64">
           <div className="flex flex-col items-center space-y-6 mt-10">
             <Link href="/" className="text-lg hover:text-yellow-400">Home</Link>
-            <Link href="/membership" className="text-lg hover:text-yellow-400">Membership</Link>
-            <Link href="#branches" className="text-lg hover:text-yellow-400">Our Branches</Link>
+            <Link href="/Membership" className="text-lg hover:text-yellow-400">Membership</Link>
+            <Link href="/Branches" className="text-lg hover:text-yellow-400">Our Branches</Link>
             <Link href="#about" className="text-lg hover:text-yellow-400">About Us</Link>
             <Link href="#contact" className="text-lg hover:text-yellow-400">Contact</Link>
-            <Link href="/membership" className="w-40 py-2 bg-yellow-300 text-black rounded-lg hover:border-l-4 border-yellow-500 transition duration-300">
+            <Link href="/Membership" className="w-40 py-2 bg-yellow-300 text-black rounded-lg hover:border-l-4 border-yellow-500 transition duration-300">
               Join Now
             </Link>
           </div>
