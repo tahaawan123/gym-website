@@ -30,15 +30,15 @@ const Header = () => {
           <Link href="/Branches" className="hover:text-yellow-400 transition duration-200">Our Branches</Link>
         </li>
         <li>
-          <Link href="#about" className="hover:text-yellow-400 transition duration-200">About Us</Link>
+          <Link href="/Aboutus" className="hover:text-yellow-400 transition duration-200">About Us</Link>
         </li>
         <li>
-          <Link href="#contact" className="hover:text-yellow-400 transition duration-200">Contact</Link>
+          <Link href="Contact" className="hover:text-yellow-400 transition duration-200">Contact</Link>
         </li>
       </ul>
 
       {/* Join Now Button */}
-      <Link href="/membership" className="hidden md:block px-4 py-2 bg-yellow-300 text-black rounded-lg hover:border-l-4 border-yellow-500 transition duration-300">
+      <Link href="/Membership" className="hidden md:block px-4 py-2 bg-yellow-300 text-black rounded-lg hover:border-l-4 border-yellow-500 transition duration-300">
         Join Now
       </Link>
 
@@ -52,8 +52,8 @@ const Header = () => {
             <Link href="/" className="text-lg hover:text-yellow-400">Home</Link>
             <Link href="/Membership" className="text-lg hover:text-yellow-400">Membership</Link>
             <Link href="/Branches" className="text-lg hover:text-yellow-400">Our Branches</Link>
-            <Link href="#about" className="text-lg hover:text-yellow-400">About Us</Link>
-            <Link href="#contact" className="text-lg hover:text-yellow-400">Contact</Link>
+            <Link href="/Aboutus" className="text-lg hover:text-yellow-400">About Us</Link>
+            <Link href="/Contact" className="text-lg hover:text-yellow-400">Contact</Link>
             <Link href="/Membership" className="w-40 py-2 bg-yellow-300 text-black rounded-lg hover:border-l-4 border-yellow-500 transition duration-300">
               Join Now
             </Link>
